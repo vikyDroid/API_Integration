@@ -2,11 +2,11 @@ package com.vikydroid.demo.viewmodel
 
 import android.view.View
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.SavedStateHandle
 import com.vikydroid.demo.base.BaseViewModel
 import com.vikydroid.demo.model.Address
 
 class ItemAddressVM : BaseViewModel() {
-
     val address = MutableLiveData<Address>()
     val visCity = MutableLiveData(View.GONE)
 

@@ -1,6 +1,7 @@
 package com.vikydroid.demo.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.SavedStateHandle
 import com.vikydroid.demo.base.BaseViewModel
 import com.vikydroid.demo.model.AddressData
 import com.vikydroid.demo.network.Api
@@ -10,7 +11,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
-class MainVM : BaseViewModel() {
+class MainVM(private val savedStateHandle: SavedStateHandle) : BaseViewModel() {
     @Inject
     lateinit var api: Api
     private val compositeDisposable: CompositeDisposable = CompositeDisposable()
@@ -45,5 +46,4 @@ class MainVM : BaseViewModel() {
         super.onCleared()
         compositeDisposable.clear()
     }
-
 }
