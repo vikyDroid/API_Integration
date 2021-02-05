@@ -22,14 +22,13 @@ class MainVM(private val savedStateHandle: SavedStateHandle) : BaseViewModel() {
 
     fun callAddressListApi() {
         compositeDisposable.clear() //Cleared previous task so that only final result prevails
-        compositeDisposable.add(
-            api.getAddresses(address.value!!, city.value!!)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(
-                    { result -> onSuccess(result) },
-                    { error -> onFailure(error) })
-        )
+        val disposable = api.getAddresses(address.value!!, city.value!!)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(
+                { result -> onSuccess(result) },
+                { error -> onFailure(error) })
+        compositeDisposable.add(disposable)
     }
 
     private fun onFailure(error: Throwable) {

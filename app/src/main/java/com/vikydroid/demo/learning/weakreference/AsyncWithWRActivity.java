@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.multithreading;
+package com.vikydroid.demo.learning.weakreference;
 
 import androidx.appcompat.app.AppCompatActivity;
 

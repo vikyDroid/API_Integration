@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.multithreading;
+package com.vikydroid.demo.learning.handlerlooper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.os.HandlerThread;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import com.vikydroid.demo.R;
 
@@ -23,6 +24,7 @@ public class HandlerThreadDefaultActivity extends AppCompatActivity {
 
         handlerThread.start();
         handler = new Handler(handlerThread.getLooper());
+
     }
 
     public void doWork(View view) {

@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.service;
+package com.vikydroid.demo.learning.service.intentservice;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,7 @@ import androidx.core.app.JobIntentService;
 
 import static com.vikydroid.demo.utils.UrlsKt.INTENT_DATA;
 
+/*https://www.youtube.com/watch?v=B4gFbWnNpac*/
 public class MyJobIntentService extends JobIntentService {
     private static final String TAG = "MyJobIntentService";
 

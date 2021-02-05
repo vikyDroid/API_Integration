@@ -1,15 +1,14 @@
-package com.vikydroid.demo.viewmodel;
+package com.vikydroid.demo.learning.service.bind;
 
 import android.content.ComponentName;
 import android.content.ServiceConnection;
-import android.os.Handler;
 import android.os.IBinder;
 import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.vikydroid.demo.learning.service.MyBinderService;
+import com.vikydroid.demo.learning.service.bind.MyBinderService;
 
 public class BinderServiceVM extends ViewModel {
     private static final String TAG = "BinderServiceVM";

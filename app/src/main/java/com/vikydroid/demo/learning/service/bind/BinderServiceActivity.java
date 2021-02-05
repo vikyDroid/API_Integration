@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.service;
+package com.vikydroid.demo.learning.service.bind;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
@@ -12,7 +12,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.vikydroid.demo.R;
-import com.vikydroid.demo.viewmodel.BinderServiceVM;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -46,7 +45,7 @@ public class BinderServiceActivity extends AppCompatActivity {
             } else {
                 Log.d(TAG, "onCreate: bounding to the service");
                 mService = myBinder.getService();
-                pbServiceProgress.setMax(mService.getMAX_PRO());
+                pbServiceProgress.setMax(mService.getMAX_Progress());
             }
         });
 
@@ -58,7 +57,7 @@ public class BinderServiceActivity extends AppCompatActivity {
                 btnStartService.setText("Pause");
                 handler.postDelayed(runnable, 100);
             } else {
-                if (mService.getCURR_PRO() == mService.getMAX_PRO()) {
+                if (mService.getCURR_Progress() == mService.getMAX_Progress()) {
                     btnStartService.setText("Restart");
                 } else {
                     btnStartService.setText("Start");
@@ -72,11 +71,11 @@ public class BinderServiceActivity extends AppCompatActivity {
         runnable = () -> {
             if (viewModel.getIsProgressBarUpdating().getValue()) {
                 if (viewModel.getMyBinder().getValue() != null) {
-                    if (mService.getCURR_PRO() == mService.getMAX_PRO()) {
+                    if (mService.getCURR_Progress() == mService.getMAX_Progress()) {
                         viewModel.setIsProgressBarUpdating(false);
                     }
-                    pbServiceProgress.setProgress(mService.getCURR_PRO());
-                    int text = 100 * mService.getCURR_PRO() / mService.getMAX_PRO();
+                    pbServiceProgress.setProgress(mService.getCURR_Progress());
+                    int text = 100 * mService.getCURR_Progress() / mService.getMAX_Progress();
                     Log.d(TAG, "Progress: " + text + "%");
                     tvProgress.setText(text + "%");
                 }
@@ -89,7 +88,7 @@ public class BinderServiceActivity extends AppCompatActivity {
 
     private void toggleUpdates() {
         if (mService != null) {
-            if (mService.getCURR_PRO() == mService.getMAX_PRO()) {
+            if (mService.getCURR_Progress() == mService.getMAX_Progress()) {
                 mService.resetTask();
                 btnStartService.setText("Start");
             } else {
@@ -119,6 +118,7 @@ public class BinderServiceActivity extends AppCompatActivity {
         startMyBindService();
 //        bindMyBindService();
     }
+
 
     private void startMyBindService() {
         Intent intent = new Intent(this, MyBinderService.class);

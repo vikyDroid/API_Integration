@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.multithreading;
+package com.vikydroid.demo.learning.handlerlooper;
 
 import android.os.Handler;
 import android.os.Looper;

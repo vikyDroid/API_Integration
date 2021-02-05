@@ -3,9 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.vikydroid.demo">
 
+    <uses-permission android:name="com.google.android.things.permission.USE_PERIPHERAL_IO" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!--  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".App"
@@ -16,14 +23,49 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".learning.work.WorkMangerActivity">
+        <activity android:name=".learning.service.broacastreceiver.BRActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".learning.service.BinderServiceActivity">
+        <activity android:name=".learning.vpn.uart.SocketActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="com.google.android.things"
+            android:required="false"
+            tools:replace="android:required" />
+
+        <activity android:name=".learning.vpn.uart.UartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".learning.vpn.VPNActivity" />
+        <activity android:name=".learning.vpn.ToyVpnClient">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".learning.workmanager.WorkMangerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".learning.service.bind.BinderServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -74,35 +116,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".learning.service.IntentServiceActivity">
+        <activity android:name=".learning.service.intentservice.IntentServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".learning.service.ServiceActivity">
+        <activity android:name=".learning.service.startservice.ServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".learning.multithreading.AsyncWithWRActivity">
+        <activity android:name=".learning.weakreference.AsyncWithWRActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".learning.multithreading.HandlerThreadDefaultActivity">
+        <activity android:name=".learning.handlerlooper.HandlerThreadDefaultActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".learning.multithreading.HandlerThreadActivity">
+        <activity android:name=".learning.handlerlooper.HandlerThreadActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -118,12 +160,12 @@
         </activity>
 
         <service
-            android:name=".learning.service.MyIntentService"
+            android:name=".learning.service.intentservice.MyIntentService"
             android:exported="false" />
-        <service android:name=".learning.service.MyService" />
-        <service android:name=".learning.service.MyBinderService" />
+        <service android:name=".learning.service.startservice.MyService" />
+        <service android:name=".learning.service.bind.MyBinderService" />
         <service
-            android:name=".learning.service.MyJobIntentService"
+            android:name=".learning.service.intentservice.MyJobIntentService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
             android:name=".learning.jobscheduler.MyJobService"
@@ -136,6 +178,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".learning.vpn.ToyVpnService"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".learning.service.broacastreceiver.SMSBroadcastsReceiver" />
     </application>
 
 </manifest>

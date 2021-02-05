@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.service;
+package com.vikydroid.demo.learning.service.startservice;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -29,7 +29,7 @@ public class MyService extends Service {
         Intent intent1 = new Intent(this, ServiceActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent1, 0);
 
-        Notification notification = null;
+        Notification notification;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             notification = new Notification.Builder(this, CHANNEL_ID)
                     .setContentIntent(pendingIntent)

@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.work;
+package com.vikydroid.demo.learning.workmanager;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;

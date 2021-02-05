@@ -29,6 +29,7 @@ import kotlin.coroutines.CoroutineContext
     private lateinit var binding: ActivityMainBinding
     private lateinit var viewModel: MainVM
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         job = Job()

@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.work;
+package com.vikydroid.demo.learning.workmanager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -11,14 +11,13 @@ import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import com.vikydroid.demo.R;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.vikydroid.demo.learning.work.MyWorker.TASK_DESC;
+import static com.vikydroid.demo.learning.workmanager.MyWorker.TASK_DESC;
 
 public class WorkMangerActivity extends AppCompatActivity {
 
@@ -59,7 +58,7 @@ public class WorkMangerActivity extends AppCompatActivity {
         final PeriodicWorkRequest periodicWorkRequest
                 = new PeriodicWorkRequest.Builder(MyWorker.class, 10, TimeUnit.HOURS)
                 .build();
-        //Chaninig
+        //Chaining
         WorkManager.getInstance(this).
                 beginWith(oneTimeWorkRequest)
                 .then(oneTimeWorkRequest)

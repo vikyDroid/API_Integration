@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.service;
+package com.vikydroid.demo.learning.service.intentservice;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -32,7 +32,7 @@ public class MyIntentService extends IntentService {
 
         PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
         wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "DemoApp:MyWakeLock");
-        wakeLock.acquire(10 * 60 * 1000L /*10 minutes*/);
+        wakeLock.acquire( 10 * 60 * 1000L /*10 minutes*/);
         Log.d(TAG, "WakeLock Acquired");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -46,6 +46,9 @@ public class MyIntentService extends IntentService {
         }
     }
 
+    /**
+     * This method is called on a background thread hence can do long blocking operations
+     */
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
         String data = intent.getStringExtra(INTENT_DATA);

@@ -27,18 +27,18 @@ public class Hot {
         });
 
         ConnectableObservable<Integer> connectibleObservable = cold.publish();
-        connectibleObservable.subscribe(/*pass th observer*/);
+        connectibleObservable.subscribe(/*pass the observer*/);
         connectibleObservable.connect();
 
         //Gives last computed value only
         AsyncSubject<Integer> asyncSubject = AsyncSubject.create();
         cold.subscribe(asyncSubject);
-        asyncSubject.subscribe(/*pass th observer*/);
+        asyncSubject.subscribe(/*pass the observer*/);
 
         //Gives default value or current value
         BehaviorSubject<Integer> behaviorSubject = BehaviorSubject.create();
         cold.subscribe(behaviorSubject);
-        behaviorSubject.subscribe(/*pass th observer*/);
+        behaviorSubject.subscribe(/*pass the observer*/);
 
         PublishSubject<Integer> publishSubject;
         ReplaySubject<Integer> replaySubject;

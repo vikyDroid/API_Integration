@@ -1,4 +1,4 @@
-package com.vikydroid.demo.learning.service;
+package com.vikydroid.demo.learning.service.intentservice;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
