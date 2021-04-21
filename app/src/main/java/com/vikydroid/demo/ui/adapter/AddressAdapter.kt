@@ -32,8 +32,7 @@ class AddressAdapter : RecyclerView.Adapter<AddressAdapter.ViewHolder>() {
         notifyDataSetChanged()
     }
 
-    class ViewHolder(private val binding: ItemAddressBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(private val binding: ItemAddressBinding) : RecyclerView.ViewHolder(binding.root) {
         private val viewModel = ItemAddressVM()
         fun bind(address: Address) {
             viewModel.setAddress(address)

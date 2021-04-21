@@ -141,10 +141,10 @@ class CoroutinesActivity : AppCompatActivity() {
     }
 
     private suspend fun fakeApiCall() {
-        val dataFromApi1 = getDataFromApi1()
+        val dataFromApi1 = getDataFromApi1()//wait
         setTextOnMainThread(dataFromApi1)
 
-        val dataFromApi2 = getDataFromApi2()
+        val dataFromApi2 = getDataFromApi2()//wait
         setTextOnMainThread(dataFromApi2)
     }
 

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -16,7 +17,7 @@ import com.vikydroid.demo.viewmodel.MainVM
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
- class MainActivity : AppCompatActivity(), CoroutineScope {
+class MainActivity : AppCompatActivity(), CoroutineScope {
 
     override val coroutineContext: CoroutineContext
         get() = Dispatchers.Main + job + handler
@@ -27,7 +28,7 @@ import kotlin.coroutines.CoroutineContext
     }
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var viewModel: MainVM
+    lateinit var viewModel: MainVM
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,9 +41,11 @@ import kotlin.coroutines.CoroutineContext
 
         setUpObserver()
 
-        launch { supervisorScope {
+        launch {
+            supervisorScope {
 
-        } }
+            }
+        }
 
 
     }

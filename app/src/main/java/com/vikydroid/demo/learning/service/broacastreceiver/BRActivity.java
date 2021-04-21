@@ -1,6 +1,7 @@
 package com.vikydroid.demo.learning.service.broacastreceiver;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -26,6 +27,12 @@ public class BRActivity extends AppCompatActivity {
             }
         };
         registerReceiver(broadcastReceiver, new IntentFilter("com.an.sms.example"));
+
+        //Local broadcast
+        LocalBroadcastManager localBroadcastManager = LocalBroadcastManager.getInstance(this);
+        Intent intent = new Intent("com.an.sms.example");
+        localBroadcastManager.sendBroadcast(intent);
+//        localBroadcastManager.unregisterReceiver();
     }
 
     @Override

@@ -19,6 +19,16 @@ public class SMSBroadcastsReceiver extends BroadcastReceiver {
 
         PendingResult pendingResult = goAsync();
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                //Do long processing
+                int i = 0;
+                pendingResult.setResultCode(i);
+                pendingResult.finish();
+            }
+        }).start();
+
 //        pendingResult.
     }
 

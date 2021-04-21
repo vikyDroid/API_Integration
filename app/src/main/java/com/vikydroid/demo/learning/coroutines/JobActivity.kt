@@ -3,6 +3,7 @@ package com.vikydroid.demo.learning.coroutines
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ProgressBar
 import android.widget.Toast
 import com.vikydroid.demo.R
@@ -32,6 +33,7 @@ class JobActivity : AppCompatActivity() {
     }
 
     private fun ProgressBar.startJobOrCancel() {
+//        this.visibility = View.GONE
         if (this.progress > 0) {
             println("$job is already active. Cancelling...")
             resetJob()

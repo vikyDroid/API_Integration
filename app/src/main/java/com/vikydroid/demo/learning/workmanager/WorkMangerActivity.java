@@ -10,6 +10,9 @@ import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
 
+import android.app.ActivityManager;
+import android.content.ComponentName;
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -26,6 +29,9 @@ public class WorkMangerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_manger);
 
+        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        ComponentName componentName = activityManager.getRunningTasks(1).get(0).topActivity;
+
         Constraints constraints = new Constraints.Builder()
                 .setRequiresCharging(false)
                 .setRequiredNetworkType(NetworkType.CONNECTED)
@@ -39,6 +45,9 @@ public class WorkMangerActivity extends AppCompatActivity {
         final OneTimeWorkRequest oneTimeWorkRequest = new OneTimeWorkRequest.Builder(MyWorker.class)
                 .setInputData(data)
                 .setConstraints(constraints)
+                .build();
+        final PeriodicWorkRequest periodicWorkRequest =
+                new PeriodicWorkRequest.Builder(MyWorker.class, 100, TimeUnit.MILLISECONDS)
                 .build();
 
         findViewById(R.id.btn_start_work).setOnClickListener(v -> {
@@ -54,10 +63,6 @@ public class WorkMangerActivity extends AppCompatActivity {
                         textView.append(String.format("%s\n", workInfo.getState().name()));
                     }
                 });
-
-        final PeriodicWorkRequest periodicWorkRequest
-                = new PeriodicWorkRequest.Builder(MyWorker.class, 10, TimeUnit.HOURS)
-                .build();
         //Chaining
         WorkManager.getInstance(this).
                 beginWith(oneTimeWorkRequest)

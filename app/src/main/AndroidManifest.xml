@@ -23,6 +23,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".learning2.MyServiceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".learning.service.broacastreceiver.BRActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -186,6 +193,8 @@
                 <action android:name="android.net.VpnService" />
             </intent-filter>
         </service>
+        <service android:name=".learning2.MyService" />
+
         <receiver android:name=".learning.service.broacastreceiver.SMSBroadcastsReceiver" />
     </application>
 

@@ -2,6 +2,7 @@ package com.vikydroid.demo.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.SavedStateHandle
+import androidx.lifecycle.viewModelScope
 import com.vikydroid.demo.base.BaseViewModel
 import com.vikydroid.demo.model.AddressData
 import com.vikydroid.demo.network.Api
@@ -9,6 +10,7 @@ import com.vikydroid.demo.ui.adapter.AddressAdapter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 class MainVM(private val savedStateHandle: SavedStateHandle) : BaseViewModel() {
@@ -19,6 +21,13 @@ class MainVM(private val savedStateHandle: SavedStateHandle) : BaseViewModel() {
     val apiError = MutableLiveData<String>()
     val address = MutableLiveData("")
     val city = MutableLiveData("")
+
+
+
+    init {
+        viewModelScope.launch {
+        }
+    }
 
     fun callAddressListApi() {
         compositeDisposable.clear() //Cleared previous task so that only final result prevails

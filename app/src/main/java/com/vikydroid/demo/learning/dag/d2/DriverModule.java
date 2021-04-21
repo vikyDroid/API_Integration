@@ -22,4 +22,8 @@ public class DriverModule {
     Driver provideDriver() {
         return new Driver(driverName);
     }
+
+    public static void main(String[] args) {
+        char c = Character.toLowerCase('c');
+    }
 }
