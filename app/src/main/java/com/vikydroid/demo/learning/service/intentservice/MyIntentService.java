@@ -20,9 +20,15 @@ public class MyIntentService extends IntentService {
     private static final String TAG = "MyIntentService";
     private PowerManager.WakeLock wakeLock;
 
+    @Override
+    public int onStartCommand(@Nullable Intent intent, int flags, int startId) {
+        return /*super.onStartCommand(intent, flags, startId)*/ START_STICKY; //to make service running when activity is killed
+    }
+
     public MyIntentService() {
         super(TAG);
         setIntentRedelivery(false);
+//        sendStickyBroadcast();
     }
 
     @Override

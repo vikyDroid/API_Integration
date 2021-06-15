@@ -47,7 +47,8 @@ public class WorkMangerActivity extends AppCompatActivity {
                 .setConstraints(constraints)
                 .build();
         final PeriodicWorkRequest periodicWorkRequest =
-                new PeriodicWorkRequest.Builder(MyWorker.class, 100, TimeUnit.MILLISECONDS)
+                new PeriodicWorkRequest.Builder(MyWorker.class, 100, TimeUnit.DAYS)
+
                 .build();
 
         findViewById(R.id.btn_start_work).setOnClickListener(v -> {
