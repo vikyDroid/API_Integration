@@ -13,7 +13,7 @@
     <string name="packages">Packages (comma separated):</string>
     <string name="allowed">Allow</string>
     <string name="disallowed">Disallow</string>
-    <string name="connecting">ToyVPN is connecting...</string>
+    <string name="connecting">ToyVPN is connecting…</string>
     <string name="connected">ToyVPN is connected!</string>
     <string name="disconnected">ToyVPN is disconnected!</string>
     <string name="incomplete_proxy_settings">
@@ -22,4 +22,11 @@
     <string name="unknown_package_names">
         Some of the specified package names do not correspond to any installed packages.
     </string>
+
+    <!--Learning 2-->
+    <string name="service">Service</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="main_activity">Main activity</string>
+    <string name="bio_metric">Bio-Metric</string>
 </resources>

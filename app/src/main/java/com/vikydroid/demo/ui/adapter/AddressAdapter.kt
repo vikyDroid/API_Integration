@@ -38,6 +38,7 @@ class AddressAdapter : RecyclerView.Adapter<AddressAdapter.ViewHolder>() {
             viewModel.setAddress(address)
             binding.viewModel = viewModel
         }
+
     }
 
 

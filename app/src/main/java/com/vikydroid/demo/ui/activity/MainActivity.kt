@@ -17,15 +17,15 @@ import com.vikydroid.demo.viewmodel.MainVM
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
-class MainActivity : AppCompatActivity(), CoroutineScope {
+class MainActivity : AppCompatActivity() {
 
-    override val coroutineContext: CoroutineContext
+    /*override val coroutineContext: CoroutineContext
         get() = Dispatchers.Main + job + handler
 
     private lateinit var job: Job
     private val handler = CoroutineExceptionHandler { _, exception ->
         print("$exception handled")
-    }
+    }*/
 
     private lateinit var binding: ActivityMainBinding
     lateinit var viewModel: MainVM
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        job = Job()
+//        job = Job()
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.addressList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         viewModel = ViewModelProvider(this).get(MainVM::class.java)
@@ -41,25 +41,19 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
 
         setUpObserver()
 
-        launch {
-            supervisorScope {
-
-            }
-        }
-
 
     }
 
     private fun setUpObserver() {
-        viewModel.address.observe(this, Observer { if (!it.isNullOrBlank()) viewModel.callAddressListApi() })
-        viewModel.city.observe(this, Observer { if (!it.isNullOrBlank()) viewModel.callAddressListApi() })
+        viewModel.address.observe(this, { if (!it.isNullOrBlank()) viewModel.callAddressListApi() })
+        viewModel.city.observe(this, { if (!it.isNullOrBlank()) viewModel.callAddressListApi() })
         viewModel.apiError.observe(this, Observer {
             Toast.makeText(this@MainActivity, it, Toast.LENGTH_SHORT).show()
         })
     }
 
     override fun onDestroy() {
-        job.cancel()
+//        job.cancel()
         super.onDestroy()
     }
 

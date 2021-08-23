@@ -1,5 +1,6 @@
 package com.vikydroid.demo.learning.rx;
 
+import io.reactivex.Maybe;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -22,6 +23,7 @@ public class Hot {
                 for (int i = 0; i < 3; i++) {
                     System.out.println("Source emit " + i);
                     emitter.onNext(i);
+
                 }
             }
         });

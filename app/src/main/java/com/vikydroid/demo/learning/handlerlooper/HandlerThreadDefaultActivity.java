@@ -2,6 +2,7 @@ package com.vikydroid.demo.learning.handlerlooper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -14,7 +15,7 @@ import com.vikydroid.demo.R;
 
 public class HandlerThreadDefaultActivity extends AppCompatActivity {
     private static final String TAG = "HandlerThreadDefaultAct";
-    private HandlerThread handlerThread = new HandlerThread("HandlerThreadDefault");
+    private final HandlerThread handlerThread = new HandlerThread("HandlerThreadDefault");
     private Handler handler;
 
     @Override
@@ -25,6 +26,7 @@ public class HandlerThreadDefaultActivity extends AppCompatActivity {
         handlerThread.start();
         handler = new Handler(handlerThread.getLooper());
 
+        Color.parseColor("#E60C0C");
     }
 
     public void doWork(View view) {

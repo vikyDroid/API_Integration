@@ -23,148 +23,46 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".learning2.MyServiceActivity">
+        <activity android:name=".learning2.security.BioMetricActivity"></activity>
+        <!-- Lerning2 -->
+        <activity android:name=".learning2.service.ServiceActivity" />
+        <activity android:name=".learning2.LearningActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".learning.service.broacastreceiver.BRActivity">
+        <activity android:name=".learning.service.broacastreceiver.BRActivity" />
+        <activity android:name=".learning.vpn.uart.SocketActivity" />
+        <activity android:name=".ui.activity.MainActivity">
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
-        <activity android:name=".learning.vpn.uart.SocketActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <uses-library
-            android:name="com.google.android.things"
-            android:required="false"
-            tools:replace="android:required" />
-
-        <activity android:name=".learning.vpn.uart.UartActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".learning.vpn.uart.UartActivity" />
         <activity android:name=".learning.vpn.VPNActivity" />
-        <activity android:name=".learning.vpn.ToyVpnClient">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.workmanager.WorkMangerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.service.bind.BinderServiceActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.coroutines.FlowActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.rx.RxActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.coroutines.JobActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".learning.vpn.ToyVpnClient" />
+        <activity android:name=".learning.workmanager.WorkMangerActivity" />
+        <activity android:name=".learning.service.bind.BinderServiceActivity" />
+        <activity android:name=".learning.coroutines.FlowActivity" />
+        <activity android:name=".learning.coroutines.JobActivity" />
         <activity
             android:name=".learning.coroutines.CoroutinesActivity"
-            android:configChanges="orientation|screenSize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.dag.DagActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.jobscheduler.JobServiceActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.service.intentservice.IntentServiceActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.service.startservice.ServiceActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.weakreference.AsyncWithWRActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.handlerlooper.HandlerThreadDefaultActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.handlerlooper.HandlerThreadActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".learning.multithreading.MultiThreadActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".learning.dag.DagActivity" />
+        <activity android:name=".learning.jobscheduler.JobServiceActivity" />
+        <activity android:name=".learning.service.intentservice.IntentServiceActivity" />
+        <activity android:name=".learning.service.startservice.ServiceActivity" />
+        <activity android:name=".learning.weakreference.AsyncWithWRActivity" />
+        <activity android:name=".learning.handlerlooper.HandlerThreadDefaultActivity" />
+        <activity android:name=".learning.handlerlooper.HandlerThreadActivity" />
+        <activity android:name=".learning.multithreading.MultiThreadActivity" />
 
         <service
             android:name=".learning.service.intentservice.MyIntentService"
@@ -176,16 +74,7 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
             android:name=".learning.jobscheduler.MyJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
-
-        <activity android:name=".ui.activity.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Learning 2 -->
         <service
             android:name=".learning.vpn.ToyVpnService"
             android:permission="android.permission.BIND_VPN_SERVICE">
@@ -193,9 +82,14 @@
                 <action android:name="android.net.VpnService" />
             </intent-filter>
         </service>
-        <service android:name=".learning2.MyService" />
 
         <receiver android:name=".learning.service.broacastreceiver.SMSBroadcastsReceiver" />
+
+        <uses-library
+            android:name="com.google.android.things"
+            android:required="false"
+            tools:replace="android:required" /> <!-- Learning 2 -->
+        <service android:name=".learning2.service.MyService" />
     </application>
 
 </manifest>

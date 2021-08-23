@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.vikydroid.demo.learning2.viewmodel.LearningViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_padding"
+        tools:context=".learning2.LearningActivity">
+
+        <Button
+            android:id="@+id/bt_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/main_activity"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:padding="15dp"
+            android:text="@string/service"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_1"
+            app:layout_constraintTop_toBottomOf="@id/bt_main" />
+
+        <Button
+            android:id="@+id/bt_biometric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:padding="15dp"
+            android:text="@string/bio_metric"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_1"
+            app:layout_constraintTop_toBottomOf="@id/bt_service" />
+
+        <TextView
+            android:id="@+id/tv_dummy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="dummy"
+            app:layout_constraintTop_toBottomOf="@id/bt_biometric" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

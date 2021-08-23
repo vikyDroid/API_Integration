@@ -31,6 +31,7 @@ public class ServiceActivity extends AppCompatActivity {
         ContextCompat.startForegroundService(this, intent);
     }
 
+
     public void stopService(View view) {
         stopService(new Intent(this, MyService.class));
     }
