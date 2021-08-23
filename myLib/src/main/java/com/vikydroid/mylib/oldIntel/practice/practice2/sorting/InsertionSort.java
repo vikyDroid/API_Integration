@@ -2,7 +2,7 @@ package com.vikydroid.mylib.oldIntel.practice.practice2.sorting;
 
 import java.util.Arrays;
 
-import static com.practice.practice.practice1.constants.MyConstants.swap;
+import static com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants.swap;
 
 //Inserting val at it's right pos
 public class InsertionSort {

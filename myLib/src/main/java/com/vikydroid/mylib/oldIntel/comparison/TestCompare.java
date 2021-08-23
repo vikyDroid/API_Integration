@@ -1,8 +1,8 @@
 package com.vikydroid.mylib.oldIntel.comparison;
 
-import com.practice.cloning.Address;
-import com.practice.cloning.Employee;
-import com.practice.cloning.MyImmutable;
+import com.vikydroid.mylib.oldIntel.cloning.Address;
+import com.vikydroid.mylib.oldIntel.cloning.Employee;
+import com.vikydroid.mylib.oldIntel.cloning.MyImmutable;
 
 import java.util.*;
 

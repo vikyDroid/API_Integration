@@ -1,9 +1,5 @@
 package com.vikydroid.mylib.oldIntel.oops;
 
-import com.practice.oops.MyInterface;
-import com.practice.oops.Observable;
-import com.practice.oops.Subscriber;
-import com.practice.oops.Trial;
 
 public class Demo {
 

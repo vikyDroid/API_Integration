@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.oops.inheritance;
 
-import com.practice.oops.abstracation.ChildSecondAddr;
+import com.vikydroid.mylib.oldIntel.oops.abstracation.ChildSecondAddr;
 
 public class Tria {
     public static void main(String[] args) {

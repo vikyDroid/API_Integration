@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.interviews.times.design.cakes;
 
-import com.practice.interviews.times.design.enums.FLAVOR_TYPE;
+import com.vikydroid.mylib.oldIntel.interviews.times.design.enums.FLAVOR_TYPE;
 
 public class CakeFactory {
     public static Cake getCake(FLAVOR_TYPE type) {

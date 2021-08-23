@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.practice.practice2.stack;
 
-import com.practice.practice.practice2.templateT.Stack;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Stack;
 
 public class EvaluatePostfix {
     public int evaluatePostfix(String exp) {

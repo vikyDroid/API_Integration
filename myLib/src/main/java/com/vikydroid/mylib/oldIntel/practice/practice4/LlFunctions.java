@@ -1,7 +1,7 @@
 package com.vikydroid.mylib.oldIntel.practice.practice4;
 
-import com.practice.practice.practice2.templateT.LinkedList;
-import com.practice.practice.practice2.templateT.Node;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.LinkedList;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Node;
 
 public class LlFunctions {
     public static void main(String[] args) {

@@ -1,12 +1,12 @@
 package com.vikydroid.mylib.oldIntel.test;
 
+import static com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants.swap;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static com.practice.practice.practice1.constants.MyConstants.a;
-import static com.practice.practice.practice1.constants.MyConstants.swap;
 
 public class Sample {
     public static void main(String[] args) {

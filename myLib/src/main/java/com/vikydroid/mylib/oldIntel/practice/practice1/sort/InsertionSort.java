@@ -2,7 +2,7 @@ package com.vikydroid.mylib.oldIntel.practice.practice1.sort;
 
 import java.util.Arrays;
 
-import static com.practice.practice.practice1.constants.MyConstants.a;
+import static com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants.a;
 
 public class InsertionSort {
     public static void main(String[] args) {

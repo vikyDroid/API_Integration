@@ -1,6 +1,7 @@
 package com.vikydroid.mylib.oldIntel.interviews.times.design.vas;
 
-import com.practice.interviews.times.design.cakes.Cake;
+
+import com.vikydroid.mylib.oldIntel.interviews.times.design.cakes.Cake;
 
 public class FlowerVAS extends VAS {
 

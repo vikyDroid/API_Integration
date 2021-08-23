@@ -1,7 +1,7 @@
 package com.vikydroid.mylib.oldIntel.interviews;
 
-import com.practice.practice.practice2.tree.Node;
-import com.practice.practice.practice2.tree.Tree;
+import com.vikydroid.mylib.oldIntel.practice.practice2.tree.Node;
+import com.vikydroid.mylib.oldIntel.practice.practice2.tree.Tree;
 
 public class TripletSumInTree {
     public static void main(String[] args) {

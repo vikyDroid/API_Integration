@@ -1,7 +1,7 @@
 package com.vikydroid.mylib.oldIntel.practice.practice2.stack;
 
 
-import com.practice.practice.practice2.ll.Node;
+import com.vikydroid.mylib.oldIntel.practice.practice2.ll.Node;
 
 public class Stack {
     Node head;

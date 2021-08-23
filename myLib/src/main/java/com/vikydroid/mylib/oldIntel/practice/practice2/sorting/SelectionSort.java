@@ -2,7 +2,7 @@ package com.vikydroid.mylib.oldIntel.practice.practice2.sorting;
 
 import java.util.Arrays;
 
-import static com.practice.practice.practice1.constants.MyConstants.swap;
+import static com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants.swap;
 
 //Selecting the min from the whole array and placing it at 0,1,2...n-1 indices
 public class SelectionSort {

@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.practice.practice1.ll;
 
-import com.practice.practice.practice1.node.NodeDll;
+import com.vikydroid.mylib.oldIntel.practice.practice1.node.NodeDll;
 
 public class Dll {
     public static void main(String[] args) {

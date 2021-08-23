@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.practice.practice2.tree;
 
-import com.practice.practice.practice2.templateT.Stack;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Stack;
 
 public class FlattenTreeToLL {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package com.vikydroid.mylib.oldIntel.practice.practice2.array;
 
-import com.practice.practice.practice2.binarysearch.BinarySearch;
-import com.practice.practice.practice2.binarysearch.FindPivotByBS;
+import com.vikydroid.mylib.oldIntel.practice.practice2.binarysearch.BinarySearch;
+import com.vikydroid.mylib.oldIntel.practice.practice2.binarysearch.FindPivotByBS;
 
 public class SearchInSortedRotated {
     public static void main(String[] args) {

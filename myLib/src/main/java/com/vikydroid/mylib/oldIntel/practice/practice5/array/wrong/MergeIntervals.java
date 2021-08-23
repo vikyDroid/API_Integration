@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.practice.practice5.array.wrong;
 
-import com.practice.practice.practice2.templateT.Stack;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Stack;
 
 import java.util.Arrays;
 

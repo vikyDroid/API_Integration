@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.accessmodifiers.pack2;
 
-import com.practice.accessmodifiers.pack1.Parent1;
+import com.vikydroid.mylib.oldIntel.accessmodifiers.pack1.Parent1;
 
 public class Child1 extends Parent1 {
 //   protected int hours = 10;

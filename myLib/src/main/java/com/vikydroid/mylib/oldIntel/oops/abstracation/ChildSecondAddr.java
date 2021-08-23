@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.oops.abstracation;
 
-import com.practice.oops.inheritance.ChildAddr;
+import com.vikydroid.mylib.oldIntel.oops.inheritance.ChildAddr;
 
 public class ChildSecondAddr extends ChildAddr {
 

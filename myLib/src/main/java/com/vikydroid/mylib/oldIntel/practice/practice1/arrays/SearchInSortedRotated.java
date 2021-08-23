@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.practice.practice1.arrays;
 
-import com.practice.practice.practice1.search.BinarySearch;
+import com.vikydroid.mylib.oldIntel.practice.practice1.search.BinarySearch;
 
 import java.util.Scanner;
 

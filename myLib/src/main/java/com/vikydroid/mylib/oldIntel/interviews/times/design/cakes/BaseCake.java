@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.interviews.times.design.cakes;
 
-import com.practice.interviews.times.design.vas.VAS;
+import com.vikydroid.mylib.oldIntel.interviews.times.design.vas.VAS;
 
 import java.util.List;
 

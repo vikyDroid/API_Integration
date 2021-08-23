@@ -1,10 +1,10 @@
 package com.vikydroid.mylib.oldIntel.practice.practice1.search;
 
-import com.practice.practice.practice1.sort.BubbleSort;
+import com.vikydroid.mylib.oldIntel.practice.practice1.sort.BubbleSort;
 
 import java.util.Arrays;
 
-import static com.practice.practice.practice1.constants.MyConstants.a;
+import static com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants.a;
 
 public class BinarySearch {
     public static void main(String[] args) {

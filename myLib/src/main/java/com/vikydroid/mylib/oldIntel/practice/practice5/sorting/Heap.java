@@ -2,7 +2,7 @@ package com.vikydroid.mylib.oldIntel.practice.practice5.sorting;
 
 import java.util.Arrays;
 
-import static com.practice.practice.practice1.constants.MyConstants.swap;
+import static com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants.swap;
 
 public class Heap {
     public static void main(String[] args) {

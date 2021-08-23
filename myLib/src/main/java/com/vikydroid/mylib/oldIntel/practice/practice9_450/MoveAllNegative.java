@@ -3,7 +3,7 @@ package com.vikydroid.mylib.oldIntel.practice.practice9_450;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import static com.practice.practice.practice1.constants.MyConstants.swap;
+import static com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants.swap;
 
 public class MoveAllNegative {
     public static void main(String[] args) {

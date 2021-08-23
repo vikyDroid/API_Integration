@@ -1,7 +1,16 @@
 package com.vikydroid.mylib.oldIntel.parkingLot;
 
-import com.practice.systemdesign.parkingLot.spot.*;
-import com.practice.systemdesign.parkingLot.vehicle.*;
+
+import com.vikydroid.mylib.oldIntel.parkingLot.spot.LargeS;
+import com.vikydroid.mylib.oldIntel.parkingLot.spot.MediumS;
+import com.vikydroid.mylib.oldIntel.parkingLot.spot.SmallS;
+import com.vikydroid.mylib.oldIntel.parkingLot.spot.Spot;
+import com.vikydroid.mylib.oldIntel.parkingLot.spot.XLargeS;
+import com.vikydroid.mylib.oldIntel.parkingLot.vehicle.LargeV;
+import com.vikydroid.mylib.oldIntel.parkingLot.vehicle.MediumV;
+import com.vikydroid.mylib.oldIntel.parkingLot.vehicle.SmallV;
+import com.vikydroid.mylib.oldIntel.parkingLot.vehicle.Vehicle;
+import com.vikydroid.mylib.oldIntel.parkingLot.vehicle.XLargeV;
 
 import java.util.HashMap;
 import java.util.Stack;

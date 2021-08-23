@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.practice.practice1.sort;
 
-import com.practice.practice.practice1.constants.MyConstants;
+import com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants;
 
 import java.util.Arrays;
 

@@ -1,8 +1,8 @@
 package com.vikydroid.mylib.oldIntel.practice.practice2.graph;
 
 
-import com.practice.practice.practice2.templateT.LinkedList;
-import com.practice.practice.practice2.templateT.Queue;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.LinkedList;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Queue;
 
 //import java.util.LinkedList;
 

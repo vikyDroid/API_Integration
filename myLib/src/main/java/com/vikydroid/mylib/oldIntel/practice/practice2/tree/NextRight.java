@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.practice.practice2.tree;
 
-import com.practice.practice.practice2.templateT.Queue;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Queue;
 
 public class NextRight {
     public static void main(String[] args) {

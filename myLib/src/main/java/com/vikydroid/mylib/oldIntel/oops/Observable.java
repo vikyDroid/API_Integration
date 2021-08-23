@@ -1,6 +1,5 @@
 package com.vikydroid.mylib.oldIntel.oops;
 
-import com.practice.oops.Subscriber;
 
 public class Observable {
     Subscriber subscriber;

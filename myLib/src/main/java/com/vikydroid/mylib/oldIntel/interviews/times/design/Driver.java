@@ -1,9 +1,9 @@
 package com.vikydroid.mylib.oldIntel.interviews.times.design;
 
-import com.practice.interviews.times.design.cakes.*;
-import com.practice.interviews.times.design.enums.FLAVOR_TYPE;
-import com.practice.interviews.times.design.enums.VAS_TYPE;
-import com.practice.interviews.times.design.vas.*;
+import com.vikydroid.mylib.oldIntel.interviews.times.design.cakes.*;
+import com.vikydroid.mylib.oldIntel.interviews.times.design.enums.FLAVOR_TYPE;
+import com.vikydroid.mylib.oldIntel.interviews.times.design.enums.VAS_TYPE;
+import com.vikydroid.mylib.oldIntel.interviews.times.design.vas.*;
 
 public class Driver {
     public static void main(String[] args) {

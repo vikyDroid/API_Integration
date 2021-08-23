@@ -1,7 +1,7 @@
 package com.vikydroid.mylib.oldIntel.practice.practice5.tree;
 
-import com.practice.practice.practice2.templateT.Queue;
-import com.practice.practice.practice2.templateT.Stack;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Queue;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Stack;
 
 public class BinaryTree<T> {
     Node<T> root;

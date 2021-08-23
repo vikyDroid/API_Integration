@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.practice.practice1.stack;
 
-import com.practice.practice.practice1.node.Node;
+import com.vikydroid.mylib.oldIntel.practice.practice1.node.Node;
 
 import java.util.Arrays;
 

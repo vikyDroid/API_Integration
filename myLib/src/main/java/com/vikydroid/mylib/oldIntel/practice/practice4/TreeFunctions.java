@@ -1,9 +1,9 @@
 package com.vikydroid.mylib.oldIntel.practice.practice4;
 
-import com.practice.practice.practice2.templateT.Queue;
-import com.practice.practice.practice2.templateT.Stack;
-import com.practice.practice.practice2.tree.Node;
-import com.practice.practice.practice2.tree.Tree;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Queue;
+import com.vikydroid.mylib.oldIntel.practice.practice2.templateT.Stack;
+import com.vikydroid.mylib.oldIntel.practice.practice2.tree.Node;
+import com.vikydroid.mylib.oldIntel.practice.practice2.tree.Tree;
 
 public class TreeFunctions {
     public static void main(String[] args) {
@@ -57,12 +57,12 @@ public class TreeFunctions {
         System.out.println("IsIdentical");
         System.out.println(isSame(tree2.root, tree1.root));
 
-        com.practice.practice.practice4.Tree treeNR = new com.practice.practice.practice4.Tree();
-        treeNR.root = new com.practice.practice.practice4.Tree.Node(10);
-        treeNR.root.left = new com.practice.practice.practice4.Tree.Node(8);
-        treeNR.root.right = new com.practice.practice.practice4.Tree.Node(2);
-        treeNR.root.left.left = new com.practice.practice.practice4.Tree.Node(3);
-        treeNR.root.right.right = new com.practice.practice.practice4.Tree.Node(90);
+        com.vikydroid.mylib.oldIntel.practice.practice4.Tree treeNR = new com.vikydroid.mylib.oldIntel.practice.practice4.Tree();
+        treeNR.root = new com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node(10);
+        treeNR.root.left = new com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node(8);
+        treeNR.root.right = new com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node(2);
+        treeNR.root.left.left = new com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node(3);
+        treeNR.root.right.right = new com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node(90);
 
         connectNextRight(treeNR.root);
         printAllConnectedRight(treeNR.root);
@@ -258,7 +258,7 @@ public class TreeFunctions {
     }
 
     //Redo
-    static void connectNextRight(com.practice.practice.practice4.Tree.Node root) {
+    static void connectNextRight(com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node root) {
         if (root == null) return;
         if (root.right != null) {
             if (root.left != null) {
@@ -274,9 +274,9 @@ public class TreeFunctions {
         connectNextRight(root.right);
     }
 
-    private static com.practice.practice.practice4.Tree.Node getNextRight(
-            com.practice.practice.practice4.Tree.Node root) {
-        com.practice.practice.practice4.Tree.Node temp = root.nextRight;
+    private static com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node getNextRight(
+            com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node root) {
+        com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node temp = root.nextRight;
         while (temp != null) {
             if (temp.left != null) return temp.left;
             if (temp.right != null) return temp.right;
@@ -285,7 +285,7 @@ public class TreeFunctions {
         return null;
     }
 
-    static void printAllConnectedRight(com.practice.practice.practice4.Tree.Node root) {
+    static void printAllConnectedRight(com.vikydroid.mylib.oldIntel.practice.practice4.Tree.Node root) {
         if (root == null) return;
         while (root.nextRight != null) {
             System.out.print(root.data + "-NR->");

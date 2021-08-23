@@ -1,7 +1,7 @@
 package com.vikydroid.mylib.oldIntel.interviews.times.design.vas;
 
-import com.practice.interviews.times.design.cakes.Cake;
-import com.practice.interviews.times.design.enums.VAS_TYPE;
+import com.vikydroid.mylib.oldIntel.interviews.times.design.cakes.Cake;
+import com.vikydroid.mylib.oldIntel.interviews.times.design.enums.VAS_TYPE;
 
 public class VAS_Factory {
     public static VAS getVAS(VAS_TYPE type, Cake cake) {

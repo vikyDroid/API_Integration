@@ -2,7 +2,7 @@ package com.vikydroid.mylib.oldIntel.practice.practice1.sort;
 
 import java.util.Arrays;
 
-import static com.practice.practice.practice1.constants.MyConstants.a;
+import static com.vikydroid.mylib.oldIntel.practice.practice1.constants.MyConstants.a;
 
 //Divide and conquer with pivot
 public class QuickSort {

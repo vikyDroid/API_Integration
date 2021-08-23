@@ -1,6 +1,6 @@
 package com.vikydroid.mylib.oldIntel.accessmodifiers.pack3;
 
-import com.practice.accessmodifiers.pack2.Child1;
+import com.vikydroid.mylib.oldIntel.accessmodifiers.pack2.Child1;
 
 public class Child2 extends Child1 {
 

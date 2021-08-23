@@ -1,8 +1,8 @@
 package com.vikydroid.mylib.oldIntel.parkingLot;
 
-import com.practice.systemdesign.parkingLot.spot.Spot;
-import com.practice.systemdesign.parkingLot.vehicle.SmallV;
-import com.practice.systemdesign.parkingLot.vehicle.Vehicle;
+import com.vikydroid.mylib.oldIntel.parkingLot.spot.Spot;
+import com.vikydroid.mylib.oldIntel.parkingLot.vehicle.SmallV;
+import com.vikydroid.mylib.oldIntel.parkingLot.vehicle.Vehicle;
 
 public class Driver {
     public static void main(String[] args) {
